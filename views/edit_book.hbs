@@ -1,0 +1,26 @@
+
+<head>
+   <meta charset = "UTF-8">
+   <title>Edit Book</title>
+</head>
+
+<form action="/book/:id" method="PUT">
+  <div class="form-group">
+    <label for="book_title">Title</label>
+    <input type="text" class="form-control" id="book_title" name="title" value={{book.Title}}>
+  </div>
+  <div class="form-group">
+    <label for="isbn_input">ISBN</label>
+    <input type="text" class="form-control" id="isbn_input" name="isbn" value={{book.ISBN}}>
+  </div>
+  <div class="form-group">
+    <label for="book_author">Author</label>
+    <input type="text" class="form-control" id="book_author" name="author" value={{book.Author}}>
+  </div>
+  <div class="form-group">
+    <label for="book_author">Description</label>
+    <textarea class="form-control" id="book_desc" name="description" value={{book.Description}}></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+  <label><button> Delete </button></label>
+</form>

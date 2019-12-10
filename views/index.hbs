@@ -1,0 +1,10 @@
+
+<div class="row w-100">
+    <button type="button" class="btn btn-primary"  onclick="location.href='/new_book'">Add book</button>
+</div>
+
+
+{{#each bookList}}
+    <a href="book/{{this.id}}"> {{this.Title}}, {{this.Author}} </a>
+    </br>
+{{/each}}

@@ -1,0 +1,24 @@
+<head>
+   <meta charset = "UTF-8">
+   <title>Add Book</title>
+</head>
+
+<form action="/new_book" method="POST">
+  <div class="form-group">
+    <label for="book_title">Title</label>
+    <input type="text" class="form-control" id="book_title" name="title" placeholder="Book title">
+  </div>
+  <div class="form-group">
+    <label for="isbn_input">ISBN</label>
+    <input type="text" class="form-control" id="isbn_input" name="isbn" placeholder="ISBN">
+  </div>
+  <div class="form-group">
+    <label for="book_author">Author</label>
+    <input type="text" class="form-control" id="book_author" name="author" placeholder="Book author">
+  </div>
+  <div class="form-group">
+    <label for="book_author">Description</label>
+    <textarea class="form-control" id="book_desc" name="description" placeholder="Book description"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
